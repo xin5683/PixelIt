@@ -3510,12 +3510,14 @@ uint8_t TranslatePin(String pin)
         return (int)GPIO_NUM_19;
     if (pin == "GPIO_NUM_21")
         return (int)GPIO_NUM_21;
+#if !defined(ARDUINO_LOLIN_S2_MINI)
     if (pin == "GPIO_NUM_22")
         return (int)GPIO_NUM_22;
     if (pin == "GPIO_NUM_23")
         return (int)GPIO_NUM_23;
     if (pin == "GPIO_NUM_25")
         return (int)GPIO_NUM_25;
+#endif
     if (pin == "GPIO_NUM_26")
         return (int)GPIO_NUM_26;
     if (pin == "GPIO_NUM_27")
